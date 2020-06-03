@@ -24,14 +24,12 @@ class Convert extends React.Component {
   
   render() {
   return (
-    <div className="">
-      <h3>Currency Calculator</h3>
-          <div className="">
-            <div>I want</div>
-            
+    <div className="convert">
+      <h3>Currency Convertor</h3>
+          <div className="block">
             <div>
               <form onSubmit={this.calcRate}>
-                <input type="number" defaultValue="150" name="count-currency"/>
+                <input type="number" name="count-currency"/>
                 <select name="type-currency" id="">
                   {Object.keys(this.props.rate).map((keyName, i) => 
                     ( 
@@ -44,9 +42,9 @@ class Convert extends React.Component {
             </div>
             <div>
               <h4>Result</h4>
-              <ul className="calc-res">
-                <li>EUR {this.state.result}</li>
-              </ul>
+              <div className="calc-res">
+                <p>EUR {this.state.result.toFixed(2)}</p>
+              </div>
             </div>
         </div>
         

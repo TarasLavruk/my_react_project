@@ -6,9 +6,9 @@ class Header extends React.Component {
   
   render() {
   return (
-      <header className="">
-        <div className="">
-          <h1 className="">React Exchange</h1>
+      <header className="App-header">
+        <div className="container">
+          <h1 className="site-title">React Exchange</h1>
         </div>
       </header>
   );

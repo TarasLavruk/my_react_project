@@ -1,27 +1,23 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-
-
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-import Rate from './Rate/Rate';
-
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Rate from "./Rate/Rate";
 
 class App extends React.Component {
-  
   render() {
-  return (
-    <div className="">
-      <Header />
-      <div className="">
-        <main>
-        <Rate /> 
-        </main> 
-      </div>    
-      <Footer />
-    </div>
-  );
+    return (
+      <div className="site">
+        <Header />
+        <div className="container">
+          <main>
+            <Rate />
+          </main>
+        </div>
+        <Footer />
+      </div>
+    );
   }
 }
 
